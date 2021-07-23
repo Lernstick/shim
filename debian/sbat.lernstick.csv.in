@@ -1,0 +1,2 @@
+shim.debian,1,Debian,shim,@UPSTREAM_VERSION@,https://tracker.debian.org/pkg/shim
+shim.lernstick,1,Lerntsick,shim,@UPSTREAM_VERSION@,https://github.com/Lernstick/shim
