@@ -1,4 +1,4 @@
-shim (15.6-1~deb10u1) UNRELEASED; urgency=medium
+shim (15.6-1~deb10u1) buster; urgency=medium
 
   * New upstream release fixing more bugs
     + Remove all our old patches, all now upstream:
@@ -8,7 +8,7 @@ shim (15.6-1~deb10u1) UNRELEASED; urgency=medium
     + Add new patches reverting arm64 build system changes so we can
       build using older binutils.
 
- -- Steve McIntyre <93sam@debian.org>  Sun, 24 Jul 2022 13:44:56 +0200
+ -- Steve McIntyre <93sam@debian.org>  Thu, 28 Jul 2022 07:46:16 +0100
 
 shim (15.4-7~deb10u1) buster; urgency=high
 
