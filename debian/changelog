@@ -1,3 +1,10 @@
+shim (15.6-1+lernstick.1) unstable; urgency=medium
+
+  [ Thore Sommer ]
+  * add configuration for lernstick
+
+ --  <mail@thson.de>  Wed, 10 Aug 2022 10:01:08 +0200
+
 shim (15.6-1) unstable; urgency=medium
 
   * New upstream release fixing more bugs
