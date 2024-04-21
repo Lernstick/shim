@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+shim (15.8-1~deb10u1) UNRELEASED; urgency=medium
+
+  [ Steve McIntyre ]
+  * New upstream release fixing more bugs
+  * Remove all our existing patches, no longer needed:
+    + Make-sbat_var.S-parse-right-with-buggy-gcc-binutils.patch (now
+      upstream)
+    + Enable-NX.patch (we don't want NX just yet until the whole boot
+      stack is NX-capable)
+    + block-grub-sbat3-debian.patch (not needed now upstream grub SBAT
+      is 4)
+
+ -- Steve McIntyre <93sam@debian.org>  Sun, 05 May 2024 00:02:51 +0100
+
 shim (15.7-1~deb10u1) buster-security; urgency=medium
 
   * New upstream release fixing more bugs
