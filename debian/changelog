@@ -10,6 +10,9 @@ shim (15.8-1) UNRELEASED; urgency=medium
       stack is NX-capable)
     + block-grub-sbat3-debian.patch (not needed now upstream grub SBAT
       is 4)
+  * NOTE: Stop building for i386
+    + Debian kernels are no longer signed for i386, it's time to stop
+      supporting i386 SB.
 
   [ Bastien Roucariès ]
   * Port autopkgtest from ubuntu
