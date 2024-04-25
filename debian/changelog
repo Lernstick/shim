@@ -13,6 +13,7 @@ shim (15.8-1) UNRELEASED; urgency=medium
   * NOTE: Stop building for i386
     + Debian kernels are no longer signed for i386, it's time to stop
       supporting i386 SB.
+  * Log if the build is nx-compatible or not
 
   [ Bastien Roucariès ]
   * Port autopkgtest from ubuntu
