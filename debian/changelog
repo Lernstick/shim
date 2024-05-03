@@ -17,6 +17,10 @@ shim (15.8-1) UNRELEASED; urgency=medium
     + Debian kernels are no longer signed for i386, it's time to stop
       supporting i386 SB.
   * Log if the build is nx-compatible or not
+  * Force shim to use the latest revocations by default to block some
+    older grub / peimage issues. This is:
+    "shim,4\ngrub,4\ngrub.peimage,2\n"
+
 
   [ Bastien Roucariès ]
   * Port autopkgtest from ubuntu
