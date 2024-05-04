@@ -1,8 +1,17 @@
 shim (15.8-1) UNRELEASED; urgency=medium
 
   [ Steve McIntyre ]
-  * Cope with changes in pesign packaging.
-  * New upstream release fixing more bugs
+  * Cope with changes in pesign packaging. Closes: #1057606
+  * New upstream release fixing more bugs. Closes: #1061519, #1064220
+    + CVE-2023-40546 mok: fix LogError() invocation (Closes: #1054210)
+    + CVE-2023-40547 - avoid incorrectly trusting HTTP headers
+    + CVE-2023-40548 Fix integer overflow on SBAT section size on
+      32-bit system
+    + CVE-2023-40549 Authenticode: verify that the signature header is
+      in bounds.
+    + CVE-2023-40550 pe: Fix an out-of-bound read in
+      verify_buffer_sbat()
+    + CVE-2023-40551: pe-relocate: Fix bounds check for MZ binaries
   * Remove all our previous patches, no longer needed:
     + Make-sbat_var.S-parse-right-with-buggy-gcc-binutils.patch (now
       upstream)
@@ -21,14 +30,13 @@ shim (15.8-1) UNRELEASED; urgency=medium
     older grub / peimage issues. This is:
     "shim,4\ngrub,4\ngrub.peimage,2\n"
 
-
   [ Bastien Roucariès ]
   * Port autopkgtest from ubuntu
   * Import MR-12: "shim-unsigned:amd64 cannot be installed alongside
     shim-unsigned:i386", thanks to adrian15 adrian15 (Closes: #936009).
-  * Fix debian/watch and check signature
+  * Fix debian/watch and check signature (Closes: #1043485)
 
- -- Steve McIntyre <93sam@debian.org>  Thu, 25 Apr 2024 22:16:12 +0100
+ -- Steve McIntyre <93sam@debian.org>  Sat, 04 May 2024 14:22:30 +0100
 
 shim (15.7-1) unstable; urgency=medium
 
