@@ -11,6 +11,15 @@ for FILE in "$@"; do
 	exit 1
     fi
 
+    # On older toolchains pre-bookworm, objdump on arm64 does not
+    # include appropriate support.
+    case "$FILE" in
+	*aa64*)
+	    echo "$0: Ignoring arm64 binary - objdump too old"
+	    continue
+	    ;;
+    esac
+
     echo "Checking NX bit on ${FILE}:"
     DLL_CHARACTERISTICS=$(objdump -x "${FILE}" | awk '/DllCharacteristics/ {print $2}')
 
