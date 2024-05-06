@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-shim (15.8-1~deb10u1) UNRELEASED; urgency=medium
+shim (15.8-1~deb10u1) buster; urgency=medium
 
-  [ Steve McIntyre ]
   * New upstream release fixing more bugs
   * Remove all our previous patches, no longer needed:
     + Make-sbat_var.S-parse-right-with-buggy-gcc-binutils.patch (now
@@ -21,8 +19,7 @@ shim (15.8-1~deb10u1) UNRELEASED; urgency=medium
     Closes: #1069054
   * Clean up better after build. Closes: #1046268
 
-
- -- Steve McIntyre <93sam@debian.org>  Sun, 05 May 2024 00:02:51 +0100
+ -- Steve McIntyre <93sam@debian.org>  Mon, 05 May 2024 11:33:57 +0100
 
 shim (15.7-1~deb10u1) buster-security; urgency=medium
 
