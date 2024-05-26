@@ -2,18 +2,10 @@
 
 include /usr/share/dpkg/architecture.mk
 
-# Other vendors, add your certs here.  No sense in using
-# dpkg-vendor --derives-from, because only Canonical-generated binaries will
-# be signed with this key; so if you are building your own shim binary you
-# should be building the other binaries also.
-ifeq ($(shell dpkg-vendor --is ubuntu && echo yes),yes)
-	cert=debian/canonical-uefi-ca.der
-	distributor=ubuntu
-COMMON_OPTIONS ?= ENABLE_SHIM_CERT=1 ENABLE_SBSIGN=1
-else
-	cert=debian/debian-uefi-ca.der
-	distributor=debian
-endif
+# Downstreams: add your own certs here. Only Debian binaries will be signed by this key.
+# You must generate and manage your own key if you (re)build shim, GRUB, or Linux.
+cert=debian/debian-uefi-ca.der
+distributor=debian
 
 deb_version             := $(shell dpkg-parsechangelog | sed -ne "s/^Version: \(.*\)/\1/p")
 upstream_version        := $(shell echo $(deb_version) | sed -e "s/-[^-]*$$//")
