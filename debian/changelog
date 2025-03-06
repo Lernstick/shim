@@ -13,6 +13,7 @@ shim (16.0~rc1-1) UNRELEASED; urgency=medium
   * New upstream RC release: 16.0~rc1-1.
     + Lots of bug fixes
     + Disable local patches for now while testing
+  * Switch to using gcc-13 for builds. Closes: #1092205
   * Also make the rules-requires-root changes in the templates for our
     generated packages. Closes: #1092425
 
