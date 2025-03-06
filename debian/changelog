@@ -10,6 +10,9 @@ shim (16.0~rc1-1) UNRELEASED; urgency=medium
   * Build without requiring root. Closes: #1089432
 
   [ Steve McIntyre ]
+  * New upstream RC release: 16.0~rc1-1.
+    + Lots of bug fixes
+    + Disable local patches for now while testing
   * Also make the rules-requires-root changes in the templates for our
     generated packages. Closes: #1092425
 
