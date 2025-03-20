@@ -1,3 +1,9 @@
+shim (16.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release: 16.0
+
+ -- Steve McIntyre <93sam@debian.org>  Thu, 20 Mar 2025 23:58:03 +0000
+
 shim (16.0~rc1-1) UNRELEASED; urgency=medium
 
   [ Steve McIntyre ]
