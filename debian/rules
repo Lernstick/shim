@@ -30,7 +30,7 @@ endif
 
 COMMON_OPTIONS += \
 	RELEASE=$(plain_upstream_version) \
-	COMMIT_ID=18d98bfb34be583a5fe2987542e4b15e0db9cb61 \
+	COMMIT_ID=617aed5d2538ac3d00fb4125ae36ba3fe2deb2f9 \
 	MAKELEVEL=0 \
 	ENABLE_HTTPBOOT=true \
 	VENDOR_CERT_FILE=$(cert) \
