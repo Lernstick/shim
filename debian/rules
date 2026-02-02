@@ -30,14 +30,14 @@ endif
 
 COMMON_OPTIONS += \
 	RELEASE=$(plain_upstream_version) \
-	COMMIT_ID=657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa \
+	COMMIT_ID=617aed5d2538ac3d00fb4125ae36ba3fe2deb2f9 \
 	MAKELEVEL=0 \
 	ENABLE_HTTPBOOT=true \
 	VENDOR_CERT_FILE=$(cert) \
 	VENDOR_DBX_FILE=$(DBX_LIST) \
 	EFIDIR=$(distributor) \
 	CROSS_COMPILE=$(DEB_HOST_GNU_TYPE)- \
-	CC=$(DEB_HOST_GNU_TYPE)-gcc-12 \
+	CC=$(DEB_HOST_GNU_TYPE)-gcc-15 \
 	$(NULL)
 
 # Force shim to use the latest revocations by default to block some
