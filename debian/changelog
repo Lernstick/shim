@@ -1,3 +1,12 @@
+shim (16.1-1+lernstick.1) lernstick-13; urgency=medium
+
+[ Lernstick Build ]
+
+- New upstream version 16.1
+- data/sbat.lernstick.csv: fix typo
+
+-- Lernstick Build <info@lernstick.ch> Tue, 02 Feb 2025 20:43:32 +0100
+
 shim (16.1~rc1-1) UNRELEASED; urgency=medium
 
 - New upstream pre-release: 16.1-rc1
